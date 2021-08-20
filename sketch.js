@@ -14,7 +14,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1000,600);
+	createCanvas(1000,600);
 	textAlign(LEFT, CENTER);
 	fill(255);
 	edges = createEdgeSprites();
@@ -36,8 +36,8 @@ function setup() {
 }
 
 function draw() {
-  background(0);
-  drawSprites();
+ 	background(0);
+ 	drawSprites();
 
 	if (keyWentDown("UP")) {
 		scott.setVelocity(0,0);
@@ -70,12 +70,10 @@ function draw() {
 		} else {
 			velY = Math.max(-15,(relativeY));
 		}
-		scott.velocityX = velX;
-		scott.velocityY = velY;
-  
-  scott.bounceOff(edges);
+	scott.velocityX = velX;
+	scott.velocityY = velY;
 	}
-
+	scott.bounceOff(edges);
 	textSize(30);
 	text("Instructions",50,50);
 	textSize(20);
