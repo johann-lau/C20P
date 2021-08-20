@@ -73,7 +73,6 @@ function draw() {
 	scott.velocityX = velX;
 	scott.velocityY = velY;
 	}
-	scott.bounceOff(edges);
 	textSize(30);
 	text("Instructions",50,50);
 	textSize(20);
@@ -87,4 +86,5 @@ function draw() {
 	text("to eat something",200,140);
 	text("to take a bath",200,170);
 	text("to move",200,200);
+  edges.bounceOff(scott);
 }
